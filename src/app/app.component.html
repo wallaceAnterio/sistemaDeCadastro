@@ -1,1 +1,15 @@
+<mat-toolbar>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>{{title}}</span>
+  <span class="example-spacer"></span>
+  <button [routerLink]="['/home']" mat-icon-button class="example-icon" aria-label="Icon Home">
+    <mat-icon>home</mat-icon>
+  </button>
+  <button [routerLink]="['/cadastro']" mat-icon-button class="example-icon" aria-label="products">
+    <mat-icon>inventory_2</mat-icon>
+  </button>
+</mat-toolbar>
+
 <router-outlet></router-outlet>

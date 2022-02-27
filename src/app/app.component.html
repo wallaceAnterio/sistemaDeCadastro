@@ -1,4 +1,5 @@
 <mat-toolbar>
+
   <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
     <mat-icon>menu</mat-icon>
   </button>
@@ -9,6 +10,12 @@
   </button>
   <button [routerLink]="['/cadastro']" mat-icon-button class="example-icon" aria-label="products">
     <mat-icon>inventory_2</mat-icon>
+  </button>
+  <button [routerLink]="['/login']" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>login</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="logout()">
+    <mat-icon>logout</mat-icon>
   </button>
 </mat-toolbar>
 

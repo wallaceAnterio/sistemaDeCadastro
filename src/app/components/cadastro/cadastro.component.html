@@ -18,3 +18,17 @@
     <button mat-flat-button color="primary" type="submit">Salvar</button>
   </form>
 </div>
+
+<div class="list">
+  <mat-list>
+    <mat-list-item *ngFor="let product of crudService.lista | async">
+       <p>{{ product.nome }} <br>Qtde: {{product.qtde}} Valor: {{product.preco}}</p>
+       <button mat-icon-button (click)="edit(product)">
+          Editar
+       </button>
+       <button mat-icon-button (click)="deleteProduct(product.id)">
+          Deletar
+       </button>
+    </mat-list-item>
+  </mat-list>
+</div>

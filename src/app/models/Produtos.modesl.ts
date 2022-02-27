@@ -3,5 +3,9 @@ export interface Product {
   nome: string;
   preco: string;
   qtde: number;
+  user_create: string;
+  user_edit: string;
+  create_date: any;
+
 
 }
